@@ -1,4 +1,1 @@
-node_modules
-.vscode
-.swc
-dist
+/node_modules

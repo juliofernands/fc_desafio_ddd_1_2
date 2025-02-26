@@ -1,0 +1,44 @@
+// Configuration file for swc.  This configuration is currently
+// in JSONC format, which is a superset of JSON.  It allows
+// comments, which are ignored by the parser.
+//
+// The configuration is an object with options for the parser
+// and the transformer.
+//
+// The options for the parser are in the "parser" object.  The
+// options for the transformer are in the "transform" object.
+//
+// The options for the parser are:
+//
+// *  syntax: The syntax to parse.  Options are "ecmascript" and
+//    "typescript".
+// *  decorators: Whether to parse decorators or not.
+//
+// The options for the transformer are:
+//
+// *  legacyDecorator: Whether to use the legacy decorator
+//    syntax.
+// *  decoratorMetadata: Whether to emit metadata for
+//    decorators.
+//
+// The above options are the defaults for the parser and
+// transformer, respectively.
+//
+// The comments above the actual configuration object are
+// ignored by the parser.
+{
+    "jsc":
+    {
+        "parser":
+        {
+            "syntax":"typescript",
+            "decorators":true
+        },
+        "transform":
+        {
+            "legacyDecorator":true,
+            "decoratorMetadata":true
+        }
+    }
+}
+    
